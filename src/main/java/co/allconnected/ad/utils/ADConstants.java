@@ -10,21 +10,18 @@ public class ADConstants {
 
     /**
      * 广告位
-     *
-     * @author michael
-     * @time 17/1/9 下午2:03
      */
     public static class AdPosition {
 
         /**
          * 广告位-返回app
          */
-        public static final String RETURNAPP = "1";
+        public static final String RETURN_APP = "1";
 
         /**
          * 广告位-退出app
          */
-        public static final String EXITAPP = "2";
+        public static final String EXIT_APP = "2";
         /**
          * 广告位-VIP
          */
@@ -41,15 +38,10 @@ public class ADConstants {
          * 广告位-protector
          */
         public static final String PROTECTOR = "6";
-
-
     }
 
     /**
      * 广告类型
-     *
-     * @author michael
-     * @time 17/1/9 下午2:04
      */
     public static class AdType {
 
@@ -62,14 +54,10 @@ public class ADConstants {
          * 广告类型-原生
          */
         public static final String AD_TYPE_NATIVE = "2";
-
     }
 
     /**
      * 广告平台
-     *
-     * @author michael
-     * @time 17/1/9 下午2:04
      */
     public static class AdPlatform {
 
@@ -82,19 +70,12 @@ public class ADConstants {
          * 广告平台-du
          */
         public static final String AD_PLATFORM_DU = "2";
-
     }
 
     /**
      * 广告统计
-     *
-     * @author michael
-     * @time 17/1/9 下午2:04
      */
     public static class AdStats {
 
-
     }
-
-
 }
