@@ -15,6 +15,12 @@ public class AdConfigBean {
      */
     private String positionId;
 
+    /**
+     * 广告id
+     *
+     * @author michael
+     * @time 17/1/9 下午2:08
+     */
     private Object id;
     /**
      * 要不要展示广告
