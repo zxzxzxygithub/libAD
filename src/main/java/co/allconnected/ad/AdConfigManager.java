@@ -24,10 +24,10 @@ public interface AdConfigManager{
 
     /**
      * 获取在线参数
+     * @param adPositionId 为空的话则表示获取所有的广告位的配置，
+     *                     不为空则表示获取某个具体的广告为的配置
      */
-    String getAdOnlineConfig();
-
-
+    String getAdOnlineConfig(String adPositionId);
 
 
 
