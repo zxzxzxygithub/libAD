@@ -17,9 +17,6 @@ public class AdConfigBean {
 
     /**
      * 广告id
-     *
-     * @author michael
-     * @time 17/1/9 下午2:08
      */
     private Object id;
     /**
