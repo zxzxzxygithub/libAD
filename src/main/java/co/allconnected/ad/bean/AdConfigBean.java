@@ -8,7 +8,7 @@ import java.util.List;
  * @author michael
  * @time 17/1/9 上午10:27
  */
-public class AdConfigBean {
+public class AdConfigBean  {
 
     private boolean enable;
 
