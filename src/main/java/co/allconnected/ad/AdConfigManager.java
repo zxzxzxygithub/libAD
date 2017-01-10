@@ -1,5 +1,7 @@
 package co.allconnected.ad;
 
+import java.util.List;
+
 import co.allconnected.ad.bean.AdConfigBean;
 
 /**
@@ -13,20 +15,9 @@ public interface AdConfigManager {
     /**
      * 获取某个广告位的配置
      *
-     * @param adPositionId 广告位id
+     * @param adPositionId 广告位Id，传空值取所有的广告位的配置，
+     *                     不为空则取该广告位的配置
      */
-    AdConfigBean getAdConfigBean(String adPositionId);
+    List<AdConfigBean> getAdConfigBean(String adPositionId);
 
-    /**
-     * 保存所有广告位的配置
-     */
-    void saveAdConfigBeans();
-
-    /**
-     * 获取在线参数
-     *
-     * @param adPositionId 为空的话则表示获取所有的广告位的配置，
-     *                     不为空则表示获取某个具体的广告为的配置
-     */
-    String getAdOnlineConfig(String adPositionId);
 }
