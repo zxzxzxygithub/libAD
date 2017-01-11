@@ -22,6 +22,41 @@ import co.allconnected.ad.bean.AdConfigBean;
  */
 public class AdConfigManager {
 
+    /**
+     * 广告平台-facebook
+     */
+    public static final int PLATFORM_FACEBOOK=1;
+    /**
+     * 广告平台-百度
+     */
+    public static final int PLATFORM_DU=2;
+    /**
+     * 广告平台-admob
+     */
+    public static final int PLATFORM_ADMOB=3;
+    /**
+     * 广告平台-admob聚合
+     */
+    public static final int PLATFORM_ADMOB_INTEGRATION=4;
+    /**
+     * 广告平台-MOBVISTA
+     */
+    public static final int PLATFORM_MOBVISTA=5;
+
+    /**
+     * 广告类型-全屏
+     */
+    public static final int TYPE_FULLSCREEN=1;
+    /**
+     * 广告类型-原生
+     */
+    public static final int TYPE_NATIVE=2;
+    /**
+     * 广告类型-appwall
+     */
+    public static final int TYPE_APPWALL=3;
+
+
     private static FirebaseRemoteConfig mFirebaseRemoteConfig;
     private static long mCacheExpiration;
 
