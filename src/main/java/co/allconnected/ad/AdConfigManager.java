@@ -28,7 +28,7 @@ public class AdConfigManager {
     /**
      * 初始化
      *
-     * @param defaultConfigFileId
+     * @param defaultConfigFileId  默认配置的文件id，在xml文件夹下
      * @param cacheExpiration     缓存失效时间，单位秒
      * @author michael
      * @time 17/1/10 下午3:38
