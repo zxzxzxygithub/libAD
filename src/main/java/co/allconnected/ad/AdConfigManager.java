@@ -25,36 +25,70 @@ public class AdConfigManager {
     /**
      * 广告平台-facebook
      */
-    public static final int PLATFORM_FACEBOOK=1;
+    public static final int PLATFORM_ID_FACEBOOK = 1;
     /**
      * 广告平台-百度
      */
-    public static final int PLATFORM_DU=2;
+    public static final int PLATFORM_ID_DU = 2;
     /**
      * 广告平台-admob
      */
-    public static final int PLATFORM_ADMOB=3;
+    public static final int PLATFORM_ID_ADMOB = 3;
     /**
      * 广告平台-admob聚合
      */
-    public static final int PLATFORM_ADMOB_INTEGRATION=4;
+    public static final int PLATFORM_ID_ADMOB_INTEGRATION = 4;
     /**
      * 广告平台-MOBVISTA
      */
-    public static final int PLATFORM_MOBVISTA=5;
+    public static final int PLATFORM_ID_MOBVISTA = 5;
+
+    /**
+     * 广告平台-facebook
+     */
+    public static final String PLATFORM_FACEBOOK = "facebook";
+    /**
+     * 广告平台-百度
+     */
+    public static final String PLATFORM_DU = "du";
+    /**
+     * 广告平台-admob
+     */
+    public static final String PLATFORM_ADMOB = "admob";
+    /**
+     * 广告平台-admob聚合
+     */
+    public static final String PLATFORM_ADMOB_INTEGRATION = "admob_integration";
+    /**
+     * 广告平台-MOBVISTA
+     */
+    public static final String PLATFORM_MOBVISTA = "mobvista";
 
     /**
      * 广告类型-全屏
      */
-    public static final int TYPE_FULLSCREEN=1;
+    public static final int TYPE_ID_FULLSCREEN = 1;
     /**
      * 广告类型-原生
      */
-    public static final int TYPE_NATIVE=2;
+    public static final int TYPE_ID_NATIVE = 2;
     /**
      * 广告类型-appwall
      */
-    public static final int TYPE_APPWALL=3;
+    public static final int TYPE_ID_APPWALL = 3;
+
+    /**
+     * 广告类型-全屏
+     */
+    public static final String TYPE_FULLSCREEN = "fullscreen";
+    /**
+     * 广告类型-原生
+     */
+    public static final String TYPE_NATIVE = "native";
+    /**
+     * 广告类型-appwall
+     */
+    public static final String TYPE_APPWALL = "appwall";
 
 
     private static FirebaseRemoteConfig mFirebaseRemoteConfig;
@@ -63,7 +97,7 @@ public class AdConfigManager {
     /**
      * 初始化
      *
-     * @param defaultConfigFileId  默认配置的文件id，在xml文件夹下
+     * @param defaultConfigFileId 默认配置的文件id，在xml文件夹下
      * @param cacheExpiration     缓存失效时间，单位秒
      * @author michael
      * @time 17/1/10 下午3:38
