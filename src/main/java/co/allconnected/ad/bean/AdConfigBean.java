@@ -9,9 +9,19 @@ import java.util.List;
  * @time 17/1/9 上午10:27
  */
 public class AdConfigBean  {
+    /**
+     * 广告位id
+     */
+    private int adPositionId;
 
+    /**
+     * 该广告位是否可用
+     */
     private boolean enable;
 
+    /**
+     * 广告列表
+     */
     private List<AdBean> ad;
 
     public boolean isEnable() {
@@ -28,6 +38,23 @@ public class AdConfigBean  {
 
     public void setAd(List<AdBean> ad) {
         this.ad = ad;
+    }
+
+    public int getAdPositionId() {
+        return adPositionId;
+    }
+
+    public void setAdPositionId(int adPositionId) {
+        this.adPositionId = adPositionId;
+    }
+
+    @Override
+    public String toString() {
+        return "AdConfigBean{" +
+                "adPositionId=" + adPositionId +
+                ", enable=" + enable +
+                ", ad=" + ad +
+                '}';
     }
 
     public static class AdBean {
@@ -66,6 +93,16 @@ public class AdConfigBean  {
 
         public void setType(int type) {
             this.type = type;
+        }
+
+        @Override
+        public String toString() {
+            return "AdBean{" +
+                    "platformId=" + platformId +
+                    ", id='" + id + '\'' +
+                    ", fresh_id='" + fresh_id + '\'' +
+                    ", type=" + type +
+                    '}';
         }
     }
 }
