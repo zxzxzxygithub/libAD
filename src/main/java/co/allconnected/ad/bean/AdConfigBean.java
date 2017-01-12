@@ -61,8 +61,8 @@ public class AdConfigBean  {
 
     public static class AdBean {
         private int platformId;
-        private String id;
-        private String fresh_id;
+        private String id;//默认是只有一个id，有多个id的用逗号隔开
+        private String fresh_id;//默认是只有一个id，有多个id的用逗号隔开
         private int type;
 
         public int getPlatformId() {
