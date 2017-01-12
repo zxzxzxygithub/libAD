@@ -193,4 +193,35 @@ public class AdConfigManager {
         }
         return null;
     }
+
+
+    /**
+     * 该广告位是否显示广告
+     *
+     * @author michael
+     * @time 17/1/12 上午11:28
+     */
+    public static boolean isAdEnabled(String adPositionId) {
+        AdConfigBean adConfigBean = getAdConfigBean(adPositionId);
+        if (adConfigBean != null) {
+            return adConfigBean.isEnable();
+        }
+        return false;
+    }
+
+    /**
+     * 获取该广告位的广告平台列表
+     *
+     * @author michael
+     * @time 17/1/12 :28
+     */
+    public static List<AdConfigBean.AdBean> getAdList(String adPositionId) {
+        AdConfigBean adConfigBean = getAdConfigBean(adPositionId);
+        if (adConfigBean != null) {
+            return adConfigBean.getAd();
+        }
+        return null;
+    }
+
+
 }
