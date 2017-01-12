@@ -57,6 +57,8 @@ public class AdConfigBean  {
                 '}';
     }
 
+
+
     public static class AdBean {
         private int platformId;
         private String id;
@@ -104,5 +106,21 @@ public class AdConfigBean  {
                     ", type=" + type +
                     '}';
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        AdConfigBean that = (AdConfigBean) o;
+
+        return adPositionId == that.adPositionId;
+
+    }
+
+    @Override
+    public int hashCode() {
+        return adPositionId;
     }
 }
